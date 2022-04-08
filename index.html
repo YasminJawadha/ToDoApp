@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h2>Login</h2>
+        </div>
+
+        <form class="form" id="form" onsubmit="return validate(redirect);">
+        
+          
+          
+          <!-- email -->
+          <div class="form-control">
+            <label>Username</label>
+            <input type="user nam" placeholder="enter your username" id="username">
+            <small id="error">Error message</small>
+          </div>
+
+          <!-- password -->
+          <div class="form-control">
+            <label>Password</label>
+            <input type="password" placeholder="enter your password" id="password">
+            <small id="error">Error message</small>
+          </div>
+
+          <!-- button -->
+          <button id="onsubmit">Submit</button>
+
+        </form>
+      </div>
+<script src="index.js"></script>
+</body>
+</html>

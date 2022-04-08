@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+
+}
+/* form styling */
+body{
+    background-color: #c21c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: rgb(236, 230, 230);
+    border-radius: 5px;
+    box-shadow: 0, 2px, 5px, rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+.header{
+    background-color: whitesmoke;
+    border-bottom: 5px solid #c21c1c;
+    padding: 20px 40px;
+    align-items: center;
+}
+.header h2{
+    margin: 0;
+
+}
+.form{
+    padding: 30px 30px;
+
+}
+.form-control{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 2px;
+
+}
+.form-control input{
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    width: 100%; 
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+
+}
+.form-control.success input{
+    border-color: green;
+
+}
+.form-control.error input{
+    border-color: red;
+
+    
+}
+.form-control small{
+    visibility: hidden;
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+}
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+.form button{
+    background-color: #c21c1c;
+    border: 2px solid #c21c1c;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    font-family: inherit;
+    width: 100%;
+}
