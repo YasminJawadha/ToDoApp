@@ -6,11 +6,11 @@ const error = document.getElementById("error");
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
 
-    checkInputs();
+    checkInputs(redirect);
 });
 function checkInputs(callback) {
     //get the values of the input
-    if (usernameValue ==='admin' && passwordValue ==='12345')
+    if (username.value ==='admin' && password.value ==='12345')
     {
         callback();
         return true;
@@ -35,6 +35,6 @@ function setErrorfor(input, message){
 }
 
 function redirect(){
-    document.getElementById("form").action="main.html";
+    window.location.href="main.html";
 }
 
